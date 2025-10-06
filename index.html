@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تخصص المحاسبة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- واجهة البداية -->
+  <div id="splash-screen">
+    <div class="splash-content">
+      <h2>تنويه من المصمم</h2>
+      <p>مرحباً بك في موقع تخصص المحاسبة</p>
+      <button onclick="hideSplash()">إدخال الموقع</button>
+      <a href="#ads" class="ads-btn">الذهاب للإعلانات</a>
+    </div>
+  </div>
+
+  <!-- شريط التنقل -->
+  <header>
+    <div class="logo">📘 دليل الطالب</div>
+    <nav>
+      <ul>
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#requirements">المتطلبات</a></li>
+        <li><a href="#ads">الإعلانات</a></li>
+        <li><a href="#timeline">الجدول الزمني</a></li>
+        <li><a href="#contact">تواصل</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- الرئيسية -->
+  <section id="home">
+    <h1>أهلاً بك في تخصص المحاسبة</h1>
+    <p>اختر أحد التبويبات أعلاه للتنقل.</p>
+  </section>
+
+  <!-- المتطلبات -->
+  <section id="requirements">
+    <h2>المتطلبات</h2>
+    <div class="tabs">
+      <button onclick="openTab('college')">متطلبات كلية</button>
+      <button onclick="openTab('major')">متطلبات تخصص</button>
+      <button onclick="openTab('university')">متطلبات جامعية</button>
+      <button onclick="openTab('elective')">اختيارية</button>
+    </div>
+    <div id="college" class="tab-content">
+      <h3>متطلبات كلية</h3>
+      <ul>
+        <li>مبادئ محاسبة 1</li>
+        <li>مبادئ محاسبة 2</li>
+      </ul>
+    </div>
+    <div id="major" class="tab-content">
+      <h3>متطلبات تخصص</h3>
+      <ul>
+        <li>محاسبة التكاليف</li>
+        <li>محاسبة إدارية</li>
+      </ul>
+    </div>
+    <div id="university" class="tab-content">
+      <h3>متطلبات جامعية</h3>
+      <ul>
+        <li>اللغة العربية</li>
+        <li>اللغة الإنجليزية</li>
+      </ul>
+    </div>
+    <div id="elective" class="tab-content">
+      <h3>المواد الاختيارية</h3>
+      <ul>
+        <li>إدارة المشاريع</li>
+        <li>الاقتصاد الجزئي</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- الإعلانات -->
+  <section id="ads">
+    <h2>الإعلانات</h2>
+    <p>لا يوجد إعلان جديد حالياً.</p>
+  </section>
+
+  <!-- الجدول الزمني -->
+  <section id="timeline">
+    <h2>الجدول الزمني</h2>
+    <div id="countdown"></div>
+  </section>
+
+  <!-- تواصل -->
+  <section id="contact">
+    <h2>تواصل معنا</h2>
+    <p>📧 email@example.com</p>
+    <p>📞 0555555555</p>
+  </section>
+
+  <footer>
+    <p>جميع الحقوق محفوظة © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
